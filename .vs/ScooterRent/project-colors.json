@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7d648ad0-87c4-45de-b067-169ff6d47cd1": {
+      "ProjectGuid": "7d648ad0-87c4-45de-b067-169ff6d47cd1",
+      "DisplayName": "ScooterRent",
+      "ColorIndex": 0
+    },
+    "ea822bfc-1504-4279-8034-d2934ba0c9f4": {
+      "ProjectGuid": "ea822bfc-1504-4279-8034-d2934ba0c9f4",
+      "DisplayName": "ScooterRent.BLL",
+      "ColorIndex": 1
+    },
+    "1c66f8ce-4bdf-412f-9957-6c56907b5469": {
+      "ProjectGuid": "1c66f8ce-4bdf-412f-9957-6c56907b5469",
+      "DisplayName": "ScooterRent.DAL",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
