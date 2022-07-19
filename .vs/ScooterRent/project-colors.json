@@ -15,7 +15,12 @@
       "ProjectGuid": "1c66f8ce-4bdf-412f-9957-6c56907b5469",
       "DisplayName": "ScooterRent.DAL",
       "ColorIndex": 2
+    },
+    "fff088b3-683a-4587-9cab-7897ca6ceb61": {
+      "ProjectGuid": "fff088b3-683a-4587-9cab-7897ca6ceb61",
+      "DisplayName": "ScooterRent.PL",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
