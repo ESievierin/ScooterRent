@@ -14,6 +14,7 @@ namespace ScooterRent.BLL.Interfaces
         
         void Delete(int id); 
         public decimal GetPriceForRent(int id);
+        public int GetLastRentIdByCustomer(CustomerDTO customer);
         public void StartRent(int customerid, int scooterid, int tarifid);
         public void EndRent(int id);
     }

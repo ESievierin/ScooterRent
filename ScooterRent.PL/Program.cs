@@ -22,8 +22,16 @@ var serviceProvider = new ServiceCollection()
     .BuildServiceProvider();
 
 var customerService = serviceProvider.GetService<ICustomerService>();
+var tarifService = serviceProvider.GetService<ITarifService>();
+var scooterService = serviceProvider.GetService<IScooterService>();
+var rentService = serviceProvider.GetService<IRentService>();
 UserController userController = new UserController(customerService);
-userController.UserSignInOrSingUp();
+TarifController tarifController = new TarifController(tarifService);
+ScooterController scooterController = new ScooterController(scooterService);
+RentContoller rentContoller = new RentContoller(rentService, tarifController, scooterController, userController);
+HomeController homeController = new HomeController(rentContoller, userController);
+homeController.Start();
+
 
 
 
