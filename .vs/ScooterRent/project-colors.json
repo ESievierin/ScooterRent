@@ -20,6 +20,11 @@
       "ProjectGuid": "fff088b3-683a-4587-9cab-7897ca6ceb61",
       "DisplayName": "ScooterRent.PL",
       "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 4

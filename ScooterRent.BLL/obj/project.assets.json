@@ -610,20 +610,6 @@
           }
         }
       },
-      "ScooterRent.BLL/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "AutoMapper": "11.0.1",
-          "ScooterRent.DAL": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ScooterRent.BLL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ScooterRent.BLL.dll": {}
-        }
-      },
       "ScooterRent.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1819,11 +1805,6 @@
         "version.txt"
       ]
     },
-    "ScooterRent.BLL/1.0.0": {
-      "type": "project",
-      "path": "../ScooterRent.BLL/ScooterRent.BLL.csproj",
-      "msbuildProject": "../ScooterRent.BLL/ScooterRent.BLL.csproj"
-    },
     "ScooterRent.DAL/1.0.0": {
       "type": "project",
       "path": "../ScooterRent.DAL/ScooterRent.DAL.csproj",
@@ -1832,7 +1813,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ScooterRent.BLL >= 1.0.0",
+      "AutoMapper >= 11.0.1",
       "ScooterRent.DAL >= 1.0.0"
     ]
   },
@@ -1842,11 +1823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ilyas\\source\\repos\\ScooterRent\\ScooterRent.PL\\ScooterRent.PL.csproj",
-      "projectName": "ScooterRent.PL",
-      "projectPath": "C:\\Users\\ilyas\\source\\repos\\ScooterRent\\ScooterRent.PL\\ScooterRent.PL.csproj",
+      "projectUniqueName": "C:\\Users\\ilyas\\source\\repos\\ScooterRent\\ScooterRent.BLL\\ScooterRent.BLL.csproj",
+      "projectName": "ScooterRent.BLL",
+      "projectPath": "C:\\Users\\ilyas\\source\\repos\\ScooterRent\\ScooterRent.BLL\\ScooterRent.BLL.csproj",
       "packagesPath": "C:\\Users\\ilyas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ilyas\\source\\repos\\ScooterRent\\ScooterRent.PL\\obj\\",
+      "outputPath": "C:\\Users\\ilyas\\source\\repos\\ScooterRent\\ScooterRent.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ilyas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1863,9 +1844,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ilyas\\source\\repos\\ScooterRent\\ScooterRent.BLL\\ScooterRent.BLL.csproj": {
-              "projectPath": "C:\\Users\\ilyas\\source\\repos\\ScooterRent\\ScooterRent.BLL\\ScooterRent.BLL.csproj"
-            },
             "C:\\Users\\ilyas\\source\\repos\\ScooterRent\\ScooterRent.DAL\\ScooterRent.DAL.csproj": {
               "projectPath": "C:\\Users\\ilyas\\source\\repos\\ScooterRent\\ScooterRent.DAL\\ScooterRent.DAL.csproj"
             }
@@ -1881,6 +1859,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[11.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

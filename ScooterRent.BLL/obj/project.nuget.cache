@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qRPZ1hO3k3Q27dKtvAUSWmK/2mn87vaYfb8O2TZJ15l757P0ZQpHY3o9YgiU8lYCJMgqpF+C5FN/fy9k6/MrKw==",
+  "dgSpecHash": "rsxx89rnF35SktKuWOGI6B8ieIwuhy/89EMASq0pkMD74IW3df3IsH/HghEMivdbTL3/+poDo1AJQPCLTunjzQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ilyas\\source\\repos\\ScooterRent\\ScooterRent.PL\\ScooterRent.PL.csproj",
+  "projectFilePath": "C:\\Users\\ilyas\\source\\repos\\ScooterRent\\ScooterRent.BLL\\ScooterRent.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ilyas\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\ilyas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

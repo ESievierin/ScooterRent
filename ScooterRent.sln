@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScooterRent.BLL", "..\ScooterRent.BLL\ScooterRent.BLL.csproj", "{EA822BFC-1504-4279-8034-D2934BA0C9F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScooterRent.BLL", "ScooterRent.BLL\ScooterRent.BLL.csproj", "{EA822BFC-1504-4279-8034-D2934BA0C9F4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScooterRent.DAL", "..\ScooterRent.DAL\ScooterRent.DAL.csproj", "{1C66F8CE-4BDF-412F-9957-6C56907B5469}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScooterRent.DAL", "ScooterRent.DAL\ScooterRent.DAL.csproj", "{1C66F8CE-4BDF-412F-9957-6C56907B5469}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScooterRent.PL", "ScooterRent.PL\ScooterRent.PL.csproj", "{FFF088B3-683A-4587-9CAB-7897CA6CEB61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScooterRent.PL", "ScooterRent.PL\ScooterRent.PL.csproj", "{FFF088B3-683A-4587-9CAB-7897CA6CEB61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

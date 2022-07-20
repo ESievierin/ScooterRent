@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "ScooterRent.PL/1.0.0": {
+      "ScooterRent.BLL/1.0.0": {
         "dependencies": {
-          "ScooterRent.BLL": "1.0.0",
+          "AutoMapper": "11.0.1",
           "ScooterRent.DAL": "1.0.0"
         },
         "runtime": {
-          "ScooterRent.PL.dll": {}
+          "ScooterRent.BLL.dll": {}
         }
       },
       "AutoMapper/11.0.1": {
@@ -468,15 +468,6 @@
           }
         }
       },
-      "ScooterRent.BLL/1.0.0": {
-        "dependencies": {
-          "AutoMapper": "11.0.1",
-          "ScooterRent.DAL": "1.0.0"
-        },
-        "runtime": {
-          "ScooterRent.BLL.dll": {}
-        }
-      },
       "ScooterRent.DAL/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.7",
@@ -489,7 +480,7 @@
     }
   },
   "libraries": {
-    "ScooterRent.PL/1.0.0": {
+    "ScooterRent.BLL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -780,11 +771,6 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
-    },
-    "ScooterRent.BLL/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "ScooterRent.DAL/1.0.0": {
       "type": "project",
