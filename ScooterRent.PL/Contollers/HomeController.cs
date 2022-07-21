@@ -12,9 +12,9 @@ namespace ScooterRent.PL.Contollers
      public class HomeController
      {
         private RentContoller rentContoller;
-        private TarifController tarifController;
-        private ScooterController scooterController;
+
         private UserController userController;
+
         public HomeController(
             RentContoller rentcontoller, 
             UserController usercontroller)
@@ -28,7 +28,9 @@ namespace ScooterRent.PL.Contollers
        public void Start()
        {
             Console.Clear();
-            Console.WriteLine("Choose action :\n1-Sing In\n2-Sing Up");
+            Console.WriteLine("Choose action :");
+            Console.WriteLine("1-Sing In");
+            Console.WriteLine("2-Sing Up");
            
             {
                 switch (Console.ReadLine())
@@ -53,13 +55,15 @@ namespace ScooterRent.PL.Contollers
                 }
             }
            
-            
-
         }
+
         public void OpenMainMenu()
         {
             Console.Clear();
-            Console.WriteLine("1-Data about account\n2-Rent scooter\n3-Logout from account");
+            Console.WriteLine("1-Data about account");
+            Console.WriteLine("2-Rent scooter");
+            Console.WriteLine("3-Logout from account");
+
             switch (Console.ReadLine())
             {
                 case "1":
@@ -84,13 +88,13 @@ namespace ScooterRent.PL.Contollers
                     OpenMainMenu();
                     break;
 
-
             }
         }
         public void OpenRentMenu()
         {
             Console.Clear();
             Console.WriteLine("1- Stop rent");
+
             if(Console.ReadLine() == "1")
             {
                 rentContoller.EndRent();
@@ -104,6 +108,7 @@ namespace ScooterRent.PL.Contollers
                 Console.ReadLine();
                 OpenRentMenu();
             }
+
         }
     }
 }

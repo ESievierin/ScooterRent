@@ -8,7 +8,7 @@ namespace ScooterRent.BLL.DTO
 {
     public  class RentDTO
     {
-        public int ID { get; set; }
+        public int ID { get;private set; }
         public int TarifId { get; private set; }
 
         public int CustomerId { get; private  set; }

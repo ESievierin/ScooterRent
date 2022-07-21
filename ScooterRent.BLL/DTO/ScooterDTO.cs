@@ -8,7 +8,7 @@ namespace ScooterRent.BLL.DTO
 {
     public class ScooterDTO
     {
-        public int Id { get; set; }
+        public int Id { get; private set; }
         
         public string Make { get; set; }
         public ScooterDTO(string make)

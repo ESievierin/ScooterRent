@@ -11,17 +11,17 @@ namespace ScooterRent.PL.Contollers
 {
      public  class ScooterController
     {
-        private IScooterService scooterService { get; set; }
+        private IScooterService scooterService
         public ScooterController(IScooterService scooterservice)
         {
             scooterService = scooterservice;
         }
         public void ShowAll()
         {
-            var scooterDTOs = scooterService.GetAll();
-            foreach (ScooterDTO scd in scooterDTOs)
+            var scootersDTO = scooterService.GetAll();
+            foreach (ScooterDTO scooter in scootersDTO)
             {
-                Console.WriteLine("{0} - Make : {1}", scd.Id, scd.Make);
+                Console.WriteLine("{0} - Make : {1}", scooter.Id, scooter.Make);
             }
         }
     }

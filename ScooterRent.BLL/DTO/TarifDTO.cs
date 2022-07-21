@@ -8,7 +8,7 @@ namespace ScooterRent.BLL.DTO
 {
     public class TarifDTO
     {
-        public int Id { get; set; }
+        public int Id { get; private set; }
 
         public decimal CostPerMin { get; set; }
         

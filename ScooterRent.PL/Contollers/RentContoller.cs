@@ -14,15 +14,14 @@ namespace ScooterRent.PL.Contollers
         
         private TarifController tarifController;
         private ScooterController scooterController;
-        private UserController userController;  
+        private UserController userController;
+        
         private IRentService rentService;
-        private ITarifService tarifService;
-        private IScooterService scooterService;
+
         private RentDTO CurrentRent;
         
         public RentContoller(
-            IRentService rentservice,
-            
+            IRentService rentservice,      
             TarifController tarifcontroller,
             ScooterController scootercontroller,
             UserController usercontroller)
@@ -40,27 +39,8 @@ namespace ScooterRent.PL.Contollers
             int tarifid = 0;
             Console.WriteLine("Choose Scooter\n");
             scooterController.ShowAll();
-            try
-            {
-                 scooterid = int.Parse(Console.ReadLine());
-            }
-            catch(FormatException)
-            {
-                Console.Clear();
-                Console.WriteLine("Incorrect Input,Try again");
-                Console.WriteLine("Press enter to go back");
-                Console.ReadLine();
-                RentScooter();
-            }
-            
-            Console.Clear();
-            Console.WriteLine("Choose Tarif\n");
-            tarifController.ShowAll();
-            try
-            {
-                 tarifid = int.Parse(Console.ReadLine());
-            }
-            catch (FormatException)
+           
+            if(!int.TryParse(Console.ReadLine(), out scooterid))
             {
                 Console.Clear();
                 Console.WriteLine("Incorrect Input,Try again");
@@ -69,6 +49,19 @@ namespace ScooterRent.PL.Contollers
                 RentScooter();
             }
             
+            Console.Clear();
+            Console.WriteLine("Choose Tarif\n");
+            tarifController.ShowAll();
+
+            if (!int.TryParse(Console.ReadLine(), out tarifid))
+            {
+                Console.Clear();
+                Console.WriteLine("Incorrect Input,Try again");
+                Console.WriteLine("Press enter to go in main menu");
+                Console.ReadLine();
+                RentScooter();
+            }
+ 
             rentService.StartRent(userController.ActiveCustomer.Id, scooterid, tarifid);
             
         }

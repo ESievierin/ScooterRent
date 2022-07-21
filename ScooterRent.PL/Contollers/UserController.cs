@@ -48,6 +48,7 @@ namespace ScooterRent.PL.Contollers
             Console.WriteLine("Input you phone number : ");
             string phonenumber = Console.ReadLine();
             var customer = customerService.GetByNumber(phonenumber);
+
             if(customer != null)
             {
                 ActiveCustomer = customer;
@@ -56,7 +57,10 @@ namespace ScooterRent.PL.Contollers
             else
             {
                 Console.WriteLine("No user found");
-                Console.WriteLine("Do you want to register?\n1-Yes\n2-No");
+                Console.WriteLine("Do you want to register?");
+                Console.WriteLine("1-Yes");
+                Console.WriteLine("2-No");
+
                 switch (Convert.ToInt32(Console.ReadLine()))
                 {
                     case 1:
@@ -68,12 +72,11 @@ namespace ScooterRent.PL.Contollers
                         break;
 
                 }
+
             }
-               
-          
-            
 
         }
+
         public void ShowUserInfo()
         {
             Console.Clear();
@@ -81,10 +84,9 @@ namespace ScooterRent.PL.Contollers
             Console.WriteLine("Age : {0}", ActiveCustomer.Age);
         }
           public void LogoutFromAccount()
-        {
+          {
             ActiveCustomer = null;
-            
-        }
+          }
       
     }
 }
