@@ -49,7 +49,7 @@ namespace ScooterRent.BLL.Service
 
         public void StartRent(int customerid, int scooterid, int tarifid)
         {
-            RentDTO rent = new RentDTO(customerid,scooterid,tarifid,DateTime.Now);
+            RentDTO rent = new RentDTO(tarifid, customerid,scooterid,DateTime.Now);
             Database.Rent.Create(mapperRent.Map<RentDTO, Rent>(rent));
             Database.Save();
         }
@@ -68,6 +68,11 @@ namespace ScooterRent.BLL.Service
                 Database.Rent.Delete(id);
                 Database.Save();
             }
+        }
+        public int GetLastRentIdByCustomer(CustomerDTO customer)
+        {
+            int rentid = Database.Rent.GetAll().Where(rent => rent.CustomerId == customer.Id).Last().Id;
+            return rentid;
         }
        
 
